@@ -1,0 +1,324 @@
+@import "global";
+
+body {
+	#data {
+		position: relative;
+		margin: 2% auto;
+		padding: 15px 20px 19px 20px;
+		max-width: 600px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+		border-radius: 6px;
+
+		.channel-selection {
+			@include flexsbcen();
+			margin-bottom: 15px;
+			p {
+				text-transform: capitalize;
+				letter-spacing: 0.1px;
+				font-size: 16px;
+				line-height: 19px;
+				font-style: normal;
+				font-weight: 500;
+				color: $grey33;
+			}
+			.icon-close-box {
+				cursor: pointer;
+			}
+		}
+		.channel-social-group {
+			margin: auto;
+
+			color: $grey33;
+			text-align: center;
+			text-transform: capitalize;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 14px;
+			// flex
+			@include flexsbcen();
+			// flex
+			&::before {
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 50px;
+				// margin: 15px 0 10px 0;
+				content: "";
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: $light-grey;
+			}
+			.btn-channel {
+				margin-top: 10px;
+				padding: 5px;
+				width: 100px;
+				border-radius: 6px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				&:hover {
+					background-color: $light-greyf4;
+				}
+
+				.logo-btn {
+					max-width: 64px;
+					margin: auto;
+				}
+			}
+			.btn + .btn {
+				margin-left: 15px;
+			}
+		}
+		.searching-group {
+			@include flexsbcen();
+			margin-top: 25px;
+			.searching__input-box {
+				width: 100%;
+				position: relative;
+				.searching__input-bar {
+					width: 100%;
+					text-transform: capitalize;
+					padding: 8px 36px;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 14px;
+					line-height: 16px;
+					// border
+					border: 1px solid $light-greyd8;
+					border-radius: 6px;
+					color: rgba(51, 51, 51, 0.4);
+
+					transition: all 0.1s ease-in;
+					&:focus {
+						box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.08);
+						outline: none;
+					}
+					&:hover {
+						border: 1px solid $blue-light-zalo;
+					}
+				}
+				.icon-search {
+					position: absolute;
+					top: 8px;
+					left: 10px;
+					cursor: pointer;
+				}
+			}
+
+			.btn__add-account {
+				min-width: 128px;
+				cursor: pointer;
+				padding: 9px 12px;
+				background-color: $blue-zalo;
+				border-radius: 6px;
+				// flex
+				@include flexsbcen();
+				transition: all 0.3s ease;
+				.img-container {
+					max-width: 18px;
+				}
+
+				// font
+				span {
+					font-style: normal;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 16px;
+					margin-left: 4px;
+					text-transform: capitalize;
+					color: $white;
+				}
+				&:hover {
+					background-color: $blue-light-zalo;
+				}
+				&:hover span {
+					color: $light-grey;
+				}
+			}
+			.btn__refresh {
+				padding: 9px;
+				border-radius: 6px;
+				border: 1px solid $light-greyd8;
+				background-color: $white;
+				transition: all 0.15s ease-in;
+				&:hover {
+					background-color: $light-grey;
+				}
+				.icon-refresh {
+					max-width: 18px;
+				}
+			}
+			.btn-searching {
+				margin-left: 10px;
+			}
+		}
+	}
+	.account-list {
+		margin-top: 20px;
+		width: 100%;
+		cursor: pointer;
+		// font
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		// font
+		tr,
+		td {
+			padding: 14px 12px;
+			transition: all 0.1s ease-out;
+			&:hover {
+				background-color: rgba(42, 115, 204, 0.04);
+			}
+		}
+
+		&,
+		tr,
+		td {
+			border-collapse: collapse;
+			border: 1px solid $light-greyd8;
+		}
+		tr:nth-child(odd) {
+			background-color: rgba(128, 173, 228, 0.04);
+		}
+		tr:first-child > td:nth-child(2) {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+		}
+		td:first-child {
+			width: 42px;
+			// height: 46px;
+			// padding: 10px 11px;
+		}
+		.box-checkbox {
+			width: 18px;
+			height: 18px;
+		}
+		.checkbox {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border: 1px solid $light-greyd8;
+			border-radius: 3px;
+
+			-webkit-appearance: none;
+			&:checked::before {
+				display: block;
+			}
+			&::before {
+				position: absolute;
+				@include position-cen();
+				content: "";
+				width: 10px;
+				height: 10px;
+				border-radius: 2px;
+				background-color: $blue-zalo;
+				display: none;
+			}
+		}
+	}
+	.data-selection {
+		margin-top: 20px;
+		label {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+		}
+		// flex
+
+		@include flexsbcen();
+		// flex
+		.inputdt {
+			width: 100%;
+			text-transform: capitalize;
+			padding: 9px 30px 9px 12px;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 16px;
+			-webkit-appearance: none;
+			// border
+			border: 1px solid $light-greyd8;
+			border-radius: 6px;
+			color: $grey33;
+
+			transition: all 0.1s ease-in;
+			&:focus {
+				box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.08);
+				outline: none;
+			}
+			&:hover {
+				border: 1px solid $blue-light-zalo;
+			}
+		}
+		.icon {
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+		}
+		.data-date {
+			max-width: 274px;
+			width: 100%;
+			position: relative;
+			.input-date {
+				// -webkit-align-items: center;
+				// display: -webkit-inline-flex;
+				// font-family: monospace;
+				// overflow: hidden;
+				// padding: 0;
+				// -webkit-padding-start: 1px;
+				// color: transparent;
+			}
+			// .icon-calendar{
+			// 	position: absolute;
+			// 	right: 10px;
+			// 	bottom: 10px;
+			// }
+		}
+		.data-time {
+			max-width: 274px;
+			width: 100%;
+			margin-left: 12px;
+			position: relative;
+			.input-time {
+			}
+			.icon-narrow {
+				&:focus {
+				}
+			}
+		}
+	}
+	.btn-data-box {
+		margin-top: 36px;
+		display: flex;
+		justify-content: flex-end;
+		.btn-data {
+			max-width: 80px;
+			width: 100%;
+			padding: 9px;
+
+			border-radius: 6px;
+			border: 1px solid $light-greyd8;
+			background-color: $white;
+			transition: all 0.15s ease-in;
+			// font
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+			text-align: center;
+			// font
+			&:hover {
+				background-color: $blue-zalo;
+				color: $white;
+			}
+		}
+		.btn-data + .btn-data {
+			margin-left: 10px;
+		}
+	}
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EXERCISE 10</title>
+		<link rel="stylesheet" href="./sass/style.css" />
+		<!-- icon GOOGLE -->
+		<!-- https://material.io/resources/icons/?style=baseline -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<!-- https://material.io/resources/icons/?style=outline -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+			rel="stylesheet"
+		/>
+
+		<!-- https://material.io/resources/icons/?style=round -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+			rel="stylesheet"
+		/>
+
+		<!-- https://material.io/resources/icons/?style=sharp -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+			rel="stylesheet"
+		/>
+
+		<!-- https://material.io/resources/icons/?style=twotone -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+			rel="stylesheet"
+		/>
+		<!-- icon GOOGLE -->
+		<!-- font GOOGLE -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font GOOGLE -->
+	</head>
+	<body>
+		<form id="data">
+			<div class="channel-selection">
+				<p>choose channel</p>
+				<div class="icon-close-box">
+					<img
+						src="./assets/img/icon-close.svg"
+						alt="icon-close"
+						class="icon icon-close"
+					/>
+				</div>
+			</div>
+			<div class="channel-social-group">
+				<div class="btn-channel btn__google-ads">
+					<img
+						src="./assets/img/logo-google-ads.png"
+						alt="logo-google-ads"
+						class="logo-btn logo-google-ads"
+					/>
+
+					<p>google ads</p>
+				</div>
+
+				<div class="btn-channel btn__facebook-ads">
+					<img
+						src="./assets/img/logo-facebook-ads.png"
+						alt="logo-facebook-ads"
+						class="logo-btn logo-facebook-ads"
+					/>
+
+					<p>facebook</p>
+				</div>
+
+				<div class="btn-channel btn__google-analytics">
+					<img
+						src="./assets/img/logo-google-analytics.png"
+						alt="logo-google-analytics"
+						class="logo-btn logo-google-analytics"
+					/>
+
+					<p>google analytics</p>
+				</div>
+
+				<div class="btn-channel btn__tiktok-ads">
+					<img
+						src="./assets/img/logo-tiktok-ads.png"
+						alt="logo-tiktok-ads"
+						class="logo-btn logo-tiktok-ads"
+					/>
+
+					<p>tiktok</p>
+				</div>
+
+				<div class="btn-channel btn__zalo-ads">
+					<img
+						src="./assets/img/logo-zalo-ads.png"
+						alt="logo-zalo-ads"
+						class="logo-btn logo-zalo-ads"
+					/>
+
+					<p>zalo</p>
+				</div>
+			</div>
+			<div class="searching-group">
+				<div class="searching__input-box">
+					<div class="icon-search-box">
+						<img
+							src="./assets/img/icon-search.svg"
+							alt="icon-search"
+							class="icon icon-search"
+						/>
+					</div>
+					<input
+						class="searching__input-bar"
+						type="text"
+						placeholder="search"
+					/>
+				</div>
+				<div class="btn-searching btn__add-account">
+					<div class="img-container">
+						<img
+							src="./assets/img/icon-plus.svg"
+							alt="icon-plus"
+							class="icon icon-plus"
+						/>
+					</div>
+					<span>add account</span>
+				</div>
+
+				<button class="btn-searching btn__refresh">
+					<img
+						class="icon icon-refresh"
+						src="./assets/img/icon-refresh.svg"
+						alt="icon-refresh"
+					/>
+				</button>
+			</div>
+			<table class="account-list">
+				<tr>
+					<td class="td-checkbox">
+						<div class="box-checkbox">
+							<input type="checkbox" class="checkbox checkbox-google-ads" />
+						</div>
+					</td>
+					<td class="checkbox-name">All Google Ads Accounts</td>
+				</tr>
+				<tr>
+					<td class="td-checkbox">
+						<div class="box-checkbox">
+							<input type="checkbox" class="checkbox" />
+						</div>
+					</td>
+					<td class="checkbox-name">Tiki Account 1</td>
+				</tr>
+				<tr>
+					<td class="td-checkbox">
+						<div class="box-checkbox">
+							<input type="checkbox" class="checkbox" />
+						</div>
+					</td>
+					<td class="checkbox-name">Tiki Account 2</td>
+				</tr>
+				<tr>
+					<td class="td-checkbox">
+						<div class="box-checkbox">
+							<input type="checkbox" class="checkbox" />
+						</div>
+					</td>
+					<td class="checkbox-name">Vstyle Account 1</td>
+				</tr>
+				<tr>
+					<td class="td-checkbox">
+						<div class="box-checkbox">
+							<input type="checkbox" class="checkbox" />
+						</div>
+					</td>
+					<td class="checkbox-name">Vstyle Account 2</td>
+				</tr>
+			</table>
+			<div class="data-selection">
+				<div class="data-date">
+					<label>Re-pull data from</label>
+
+					<input class="inputdt input-date" type="date" value="000" />
+					<div class="icon icon-calendar">
+						<img src="./assets/img/icon-calendar.svg" alt="icon-calendar" />
+					</div>
+				</div>
+				<div class="data-time">
+					<label>Schedule refesh data</label>
+
+					<select name="refresh-date" class="inputdt input-time">
+						<option value="minutes">60 minutes</option>
+						<option value="minutes">120 minutes</option>
+						<option value="minutes">180 minutes</option>
+						<option value="minutes">Bất Tận</option>
+					</select>
+					<div class="icon icon-narrow">
+						<img src="./assets/img/icon-arrow.svg" alt="icon-narrow" />
+					</div>
+				</div>
+			</div>
+			<div class="btn-data-box">
+				<button class="btn-data btn-data-cancel">Cancel</button>
+				<button class="btn-data btn-data-save">Save</button>
+			</div>
+		</form>
+	</body>
+</html>

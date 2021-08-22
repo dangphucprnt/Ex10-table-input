@@ -1,0 +1,10 @@
+@mixin flexsbcen() {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin position-cen() {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

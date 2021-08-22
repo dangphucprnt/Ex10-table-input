@@ -1,0 +1,407 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body #data {
+  position: relative;
+  margin: 2% auto;
+  padding: 15px 20px 19px 20px;
+  max-width: 600px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+body #data .channel-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+body #data .channel-selection p {
+  text-transform: capitalize;
+  letter-spacing: 0.1px;
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: 500;
+  color: #333333;
+}
+
+body #data .channel-selection .icon-close-box {
+  cursor: pointer;
+}
+
+body #data .channel-social-group {
+  margin: auto;
+  color: #333333;
+  text-align: center;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #data .channel-social-group::before {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 50px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #eaedf1;
+}
+
+body #data .channel-social-group .btn-channel {
+  margin-top: 10px;
+  padding: 5px;
+  width: 100px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body #data .channel-social-group .btn-channel:hover {
+  background-color: #f4f6f8;
+}
+
+body #data .channel-social-group .btn-channel .logo-btn {
+  max-width: 64px;
+  margin: auto;
+}
+
+body #data .channel-social-group .btn + .btn {
+  margin-left: 15px;
+}
+
+body #data .searching-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+
+body #data .searching-group .searching__input-box {
+  width: 100%;
+  position: relative;
+}
+
+body #data .searching-group .searching__input-box .searching__input-bar {
+  width: 100%;
+  text-transform: capitalize;
+  padding: 8px 36px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid #d8dee6;
+  border-radius: 6px;
+  color: rgba(51, 51, 51, 0.4);
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+body #data .searching-group .searching__input-box .searching__input-bar:focus {
+  -webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.08);
+  outline: none;
+}
+
+body #data .searching-group .searching__input-box .searching__input-bar:hover {
+  border: 1px solid #397cce;
+}
+
+body #data .searching-group .searching__input-box .icon-search {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  cursor: pointer;
+}
+
+body #data .searching-group .btn__add-account {
+  min-width: 128px;
+  cursor: pointer;
+  padding: 9px 12px;
+  background-color: #2a73cc;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body #data .searching-group .btn__add-account .img-container {
+  max-width: 18px;
+}
+
+body #data .searching-group .btn__add-account span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 4px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+body #data .searching-group .btn__add-account:hover {
+  background-color: #397cce;
+}
+
+body #data .searching-group .btn__add-account:hover span {
+  color: #eaedf1;
+}
+
+body #data .searching-group .btn__refresh {
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #d8dee6;
+  background-color: #fff;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+body #data .searching-group .btn__refresh:hover {
+  background-color: #eaedf1;
+}
+
+body #data .searching-group .btn__refresh .icon-refresh {
+  max-width: 18px;
+}
+
+body #data .searching-group .btn-searching {
+  margin-left: 10px;
+}
+
+body .account-list {
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+body .account-list tr,
+body .account-list td {
+  padding: 14px 12px;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+body .account-list tr:hover,
+body .account-list td:hover {
+  background-color: rgba(42, 115, 204, 0.04);
+}
+
+body .account-list,
+body .account-list tr,
+body .account-list td {
+  border-collapse: collapse;
+  border: 1px solid #d8dee6;
+}
+
+body .account-list tr:nth-child(odd) {
+  background-color: rgba(128, 173, 228, 0.04);
+}
+
+body .account-list tr:first-child > td:nth-child(2) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+body .account-list td:first-child {
+  width: 42px;
+}
+
+body .account-list .box-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+body .account-list .checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d8dee6;
+  border-radius: 3px;
+  -webkit-appearance: none;
+}
+
+body .account-list .checkbox:checked::before {
+  display: block;
+}
+
+body .account-list .checkbox::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #2a73cc;
+  display: none;
+}
+
+body .data-selection {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .data-selection label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+body .data-selection .inputdt {
+  width: 100%;
+  text-transform: capitalize;
+  padding: 9px 30px 9px 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-appearance: none;
+  border: 1px solid #d8dee6;
+  border-radius: 6px;
+  color: #333333;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+body .data-selection .inputdt:focus {
+  -webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.08);
+          box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.08);
+  outline: none;
+}
+
+body .data-selection .inputdt:hover {
+  border: 1px solid #397cce;
+}
+
+body .data-selection .icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+body .data-selection .data-date {
+  max-width: 274px;
+  width: 100%;
+  position: relative;
+}
+
+body .data-selection .data-time {
+  max-width: 274px;
+  width: 100%;
+  margin-left: 12px;
+  position: relative;
+}
+
+body .btn-data-box {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .btn-data-box .btn-data {
+  max-width: 80px;
+  width: 100%;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #d8dee6;
+  background-color: #fff;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+body .btn-data-box .btn-data:hover {
+  background-color: #2a73cc;
+  color: #fff;
+}
+
+body .btn-data-box .btn-data + .btn-data {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */
